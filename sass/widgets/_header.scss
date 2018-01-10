@@ -1,0 +1,18 @@
+.header {
+  padding-top: 40px;
+  background: linear-gradient(to right,  #f4f2ea 0%,#dcd7c3 51%,#c4bc96 100%);
+.info {
+  p {
+    margin-top: 0;
+    font-weight: 700;
+  }
+  &__mail {
+    margin-bottom: 10px;
+
+  }
+  a {
+    padding-left: 10px;
+  }
+}
+
+}
