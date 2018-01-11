@@ -17,12 +17,8 @@ a {
   text-decoration: none; }
 
 a:hover {
+  color: #73c145;
   text-decoration: none; }
-
-p,
-li {
-  font-size: 17px;
-  line-height: 1.7; }
 
 p {
   margin: 1.17em 0; }
@@ -36,8 +32,8 @@ strong {
 
 body, p,
 li {
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
-  font-weight: 300; }
+  font-family: "Bree Serif", Helvetica, Arial, serif;
+  font-weight: 400; }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -480,8 +476,53 @@ figure {
     .container--nav {
       max-width: 1036px; } }
 
+/*navigation*/
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0; }
+  .navbar .logo {
+    margin-right: 16px;
+    padding: 0 17px;
+    line-height: 56px;
+    background-color: #01a9e7;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px; }
+  .navbar a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700; }
+  .navbar.bg-dark {
+    background-color: #1f2022 !important; }
+  .navbar svg {
+    margin-top: 10px;
+    width: 147px;
+    height: 28px; }
+
+.navbar-dark .navbar-nav .nav-link {
+  padding-right: 10px;
+  padding-left: 10px;
+  color: #ffffff; }
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  color: #73c145; }
+
 .image__logo {
   width: 250px; }
+
+.button--try-slider {
+  background-image: -moz-linear-gradient(90deg, #ff7006 0%, #ff961a 100%);
+  background-image: -webkit-linear-gradient(90deg, #ff7006 0%, #ff961a 100%);
+  background-image: -ms-linear-gradient(90deg, #ff7006 0%, #ff961a 100%);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.68), inset 0 2px 0 0 rgba(255, 255, 255, 0.19);
+  width: 141px;
+  height: 42px;
+  border-radius: 10px; }
+
+li a.nav-link.button.button--login {
+  background-color: #141414;
+  border-radius: 25px;
+  padding-right: 22px;
+  padding-left: 22px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.68), 0 2px 0 0 rgba(255, 255, 255, 0.19); }
 
 .heading--level-1 {
   margin-top: 0;
@@ -494,17 +535,6 @@ figure {
 
 .heading--level-3 {
   margin-bottom: 20px; }
-
-.header {
-  padding-top: 40px;
-  background: linear-gradient(to right, #f4f2ea 0%, #dcd7c3 51%, #c4bc96 100%); }
-  .header .info p {
-    margin-top: 0;
-    font-weight: 700; }
-  .header .info__mail {
-    margin-bottom: 10px; }
-  .header .info a {
-    padding-left: 10px; }
 
 .footer {
   padding: 5px 0;

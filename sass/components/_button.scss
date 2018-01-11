@@ -1,0 +1,21 @@
+.button {
+
+  &--try-slider {
+    background-image: -moz-linear-gradient( 90deg, rgb(255,112,6) 0%, rgb(255,150,26) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(255,112,6) 0%, rgb(255,150,26) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(255,112,6) 0%, rgb(255,150,26) 100%);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.68),inset 0 2px 0 0 rgba(255, 255, 255, 0.19);
+    width: 141px;
+    height: 42px;
+    border-radius: 10px;
+  }
+
+
+}
+li a.nav-link.button.button--login {
+  background-color: #141414;
+  border-radius: 25px;
+  padding-right: 22px;
+  padding-left: 22px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.68), 0 2px 0 0 rgba(255, 255, 255, 0.19);
+}

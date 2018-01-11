@@ -21,14 +21,14 @@ a {
 
 }
  a:hover {
+color: $baseHoverColor;
   text-decoration: none;
 
 }
 p,
 li {
   @extend %baseRegularFont;
-  font-size: 17px;
-  line-height: 1.7;
+
 }
 p {
   margin: 1.17em 0;
