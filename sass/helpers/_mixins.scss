@@ -4,3 +4,9 @@
     font-weight: 400;
     
 }
+%control {
+    position: absolute;
+    display: block;
+    top:50%;
+    transform: translateY(-50%);
+}

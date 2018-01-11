@@ -9,10 +9,10 @@ html {
 body {
   background-color: #ffffff;
   font-size: 100%;
-  color: #2e3641; }
+  color: #818181; }
 
 a {
-  color: #2e3641;
+  color: #818181;
   cursor: pointer;
   text-decoration: none; }
 
@@ -34,6 +34,12 @@ body, p,
 li {
   font-family: "Bree Serif", Helvetica, Arial, serif;
   font-weight: 400; }
+
+.slider__control-left, .slider__control-right {
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%); }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -474,6 +480,9 @@ figure {
   padding-left: 28px; }
   @media screen and (min-width: 1200px) {
     .container--nav {
+      max-width: 1008px; } }
+  @media screen and (min-width: 1200px) {
+    .container--slider {
       max-width: 1036px; } }
 
 /*navigation*/
@@ -505,36 +514,113 @@ figure {
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
   color: #73c145; }
 
-.image__logo {
-  width: 250px; }
+.article__text {
+  margin: 0; }
+  .article__text--slider {
+    position: absolute;
+    right: 55px;
+    top: -67px;
+    line-height: 1;
+    font-family: "ReklameScriptRegular";
+    color: #71b43f;
+    font-size: 129px; }
 
-.button--try-slider {
-  background-image: -moz-linear-gradient(90deg, #ff7006 0%, #ff961a 100%);
-  background-image: -webkit-linear-gradient(90deg, #ff7006 0%, #ff961a 100%);
-  background-image: -ms-linear-gradient(90deg, #ff7006 0%, #ff961a 100%);
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.68), inset 0 2px 0 0 rgba(255, 255, 255, 0.19);
-  width: 141px;
-  height: 42px;
-  border-radius: 10px; }
+.button {
+  color: #ffffff; }
+  .button--try-slider {
+    display: block;
+    background-image: -moz-linear-gradient(90deg, #ff7006 0%, #ff961a 100%);
+    background-image: -webkit-linear-gradient(90deg, #ff7006 0%, #ff961a 100%);
+    background-image: -ms-linear-gradient(90deg, #ff7006 0%, #ff961a 100%);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.68), inset 0 2px 0 0 rgba(255, 255, 255, 0.19);
+    width: 264px;
+    height: 77px;
+    border-radius: 40px;
+    font-size: 36px;
+    line-height: 70px;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.28); }
 
 li a.nav-link.button.button--login {
   background-color: #141414;
   border-radius: 25px;
-  padding-right: 22px;
-  padding-left: 22px;
+  padding: 2px 22px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.68), 0 2px 0 0 rgba(255, 255, 255, 0.19); }
 
-.heading--level-1 {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 27px; }
+.heading {
+  margin: 0;
+  padding: 0; }
+  .heading--level-1 {
+    font-size: 116px; }
+  .heading--level-2 {
+    font-size: 42.83px; }
+  .heading--level-3 {
+    margin-bottom: 20px; }
+  .heading--dark {
+    color: #222222; }
 
-.heading--level-2 {
-  font-size: 23px; }
+.Free_to_be_You_____anytime__anywhere_ {
+  font-size: 14.476px;
+  font-family: "BreeSerif";
+  color: #222222;
+  line-height: 1.52;
+  -moz-transform: matrix(2.9588441078, 0, 0, 2.9580693859, 0, 0);
+  -webkit-transform: matrix(2.9588441078, 0, 0, 2.9580693859, 0, 0);
+  -ms-transform: matrix(2.9588441078, 0, 0, 2.9580693859, 0, 0);
+  position: absolute;
+  left: 901.846px;
+  top: 397.454px;
+  z-index: 228; }
 
-.heading--level-3 {
-  margin-bottom: 20px; }
+.slider {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 452px;
+  background: url("../images/header-bg.jpg") no-repeat center center;
+  background-size: cover; }
+  .slider__heading {
+    color: #222222; }
+  .slider__slogan {
+    position: relative;
+    margin-top: 30px;
+    padding-top: 76px;
+    padding-bottom: 76px;
+    border-bottom: 3px solid #71b43f; }
+  .slider__slogan:before {
+    border-top: 3px solid #71b43f;
+    content: "";
+    height: 0;
+    left: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%; }
+  .slider__image-women {
+    position: absolute;
+    bottom: 0;
+    left: 19%; }
+  .slider__image-tablet {
+    position: absolute;
+    bottom: 0;
+    right: 11%; }
+  .slider__control-left {
+    left: 0; }
+  .slider__control-right {
+    right: 0; }
+  .slider__control-ico-left {
+    display: block;
+    width: 71px;
+    height: 110px;
+    background: url("../images/left-arrow.png") no-repeat; }
+  .slider__control-ico-right {
+    display: block;
+    width: 69px;
+    height: 103px;
+    background: url("../images/right-arrow.png") no-repeat; }
+
+.your-way {
+  position: absolute;
+  right: 55px;
+  top: -67px; }
 
 .footer {
   padding: 5px 0;

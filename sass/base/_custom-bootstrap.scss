@@ -3,6 +3,11 @@
   padding-left: 28px;
   &--nav {
     @media screen and (min-width: 1200px) {
+      max-width: 1008px;
+    }
+  }
+  &--slider {
+    @media screen and (min-width: 1200px) {
       max-width: 1036px;
     }
   }

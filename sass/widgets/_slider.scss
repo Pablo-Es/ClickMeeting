@@ -1,0 +1,64 @@
+.slider {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 452px;
+  background: url("../images/header-bg.jpg") no-repeat center center;
+  background-size: cover;
+&__heading {
+  color: $sliderHeaderColor;
+}
+  &__slogan {
+    position: relative;
+    margin-top: 30px;
+    padding-top: 76px;
+    padding-bottom: 76px;
+    border-bottom: 3px solid #71b43f;
+
+  }
+    &__slogan:before {
+      border-top: 3px solid #71b43f;
+      content: "";
+      height: 0;
+      left: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+    }
+&__image-women {
+  position: absolute;
+  bottom: 0;
+  left: 19%;
+}
+  &__image-tablet {
+    position: absolute;
+    bottom: 0;
+    right: 11%;
+  }
+  &__control-left {
+    @extend %control;
+    left: 0;
+  }
+  &__control-right {
+  @extend %control;
+    right: 0;
+
+  }
+  &__control-ico-left {
+    display: block;
+    width: 71px;
+    height: 110px;
+    background: url("../images/left-arrow.png") no-repeat;
+  }
+  &__control-ico-right {
+    display: block;
+    width: 69px;
+    height: 103px;
+    background: url("../images/right-arrow.png") no-repeat;
+  }
+}
+.your-way {
+  position: absolute;
+  right: 55px;
+  top: -67px;
+}

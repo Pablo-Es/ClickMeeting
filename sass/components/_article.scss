@@ -1,0 +1,13 @@
+.article__text {
+margin: 0;
+
+  &--slider {
+    position: absolute;
+    right: 55px;
+    top: -67px;
+    line-height: 1;
+    font-family: $baseFontReklame;
+    color: $textGreenColor;
+    font-size: 129px;
+  }
+}
