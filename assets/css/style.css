@@ -518,7 +518,8 @@ figure {
   color: #73c145; }
 
 .article__text {
-  margin: 0; }
+  margin: 0 0 20px;
+  font-size: 14px; }
   .article__text--slider {
     position: absolute;
     right: 55px;
@@ -539,7 +540,7 @@ figure {
 
 .button {
   color: #ffffff; }
-  .button--try-slider {
+  .button--premium {
     display: block;
     background-image: -moz-linear-gradient(90deg, #ff7006 0%, #ff961a 100%);
     background-image: -webkit-linear-gradient(90deg, #ff7006 0%, #ff961a 100%);
@@ -570,6 +571,13 @@ li a.nav-link.button.button--login {
     font-size: 42.83px; }
   .heading--level-3 {
     font-size: 77.59px; }
+  .heading__level-4 {
+    margin-bottom: 56px; }
+    .heading__level-4--level-4 {
+      font-size: 40px; }
+    .heading__level-4--level-4-1 {
+      font-size: 60px;
+      line-height: 0.8; }
   .heading--dark {
     color: #222222; }
   .heading--light-dark {
@@ -578,12 +586,26 @@ li a.nav-link.button.button--login {
     font-size: 98.26px;
     color: #70b33f;
     line-height: 1; }
+  .heading__span-reklame {
+    font-family: "ReklameScriptRegular";
+    font-size: 72px; }
+    .heading__span-reklame--span1 {
+      color: #70b33f; }
+    .heading__span-reklame--span2 {
+      color: #fdc11f; }
+    .heading__span-reklame--span3 {
+      color: #fd971f; }
+    .heading__span-reklame--span4 {
+      color: #fd631f; }
+    .heading__span-reklame--span5 {
+      color: #ff3210; }
+    .heading__span-reklame--span6 {
+      color: #1e6ad1; }
 
 .article-bar {
   position: relative;
-  margin-bottom: 25px; }
+  margin-bottom: 52px; }
   .article-bar:before {
-    border-top: 3px solid #70b33f;
     content: "";
     height: 0;
     left: auto;
@@ -591,19 +613,32 @@ li a.nav-link.button.button--login {
     right: 0;
     top: 50%;
     width: 100%; }
+  .article-bar--bar1:before {
+    border-top: 3px solid #70b33f; }
+  .article-bar--bar2:before {
+    border-top: 3px solid #fdc11f; }
+  .article-bar--bar3:before {
+    border-top: 3px solid #fd971f; }
+  .article-bar--bar4:before {
+    border-top: 3px solid #fd631f; }
+  .article-bar--bar5:before {
+    border-top: 3px solid #ff3210; }
+  .article-bar--bar6:before {
+    border-top: 3px solid #1e6ad1; }
   .article-bar__wrap {
+    width: 79.39%;
     position: relative;
     display: inline-block;
     border-left: 15px solid #fff;
     border-right: 15px solid #fff; }
   .article-bar__text {
+    width: 100%;
     display: inline-block;
-    padding: 10px 25px 16px;
+    padding: 10px 0 16px;
     font-size: 40px;
     color: #ffffff;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.29);
-    background-color: #70b33f;
-    border-radius: 25px;
+    border-radius: 50px;
     line-height: 1; }
     .article-bar__text:after {
       content: "";
@@ -613,8 +648,31 @@ li a.nav-link.button.button--login {
       width: 0;
       height: 0;
       border-style: solid;
-      border-width: 14px 14px 0 14px;
-      border-color: #6fb33f transparent transparent transparent; }
+      border-width: 14px 14px 0 14px; }
+    .article-bar__text--text1 {
+      background-color: #70b33f; }
+      .article-bar__text--text1:after {
+        border-color: #70b33f transparent transparent transparent; }
+    .article-bar__text--text2 {
+      background-color: #fdc11f; }
+      .article-bar__text--text2:after {
+        border-color: #fdc11f transparent transparent transparent; }
+    .article-bar__text--text3 {
+      background-color: #fd971f; }
+      .article-bar__text--text3:after {
+        border-color: #fd971f transparent transparent transparent; }
+    .article-bar__text--text4 {
+      background-color: #fd631f; }
+      .article-bar__text--text4:after {
+        border-color: #fd631f transparent transparent transparent; }
+    .article-bar__text--text5 {
+      background-color: #ff3210; }
+      .article-bar__text--text5:after {
+        border-color: #ff3210 transparent transparent transparent; }
+    .article-bar__text--text6 {
+      background-color: #1e6ad1; }
+      .article-bar__text--text6:after {
+        border-color: #1e6ad1 transparent transparent transparent; }
 
 .slider {
   position: relative;
@@ -660,9 +718,10 @@ li a.nav-link.button.button--login {
   border-top: 1px solid #ffffff;
   background: url("../images/bg.png") no-repeat; }
   .more-slogans__header {
-    padding-bottom: 28px; }
+    padding-bottom: 88px; }
   .more-slogans__article {
-    padding-top: 60px; }
+    padding-top: 30px;
+    padding-bottom: 30px; }
 
 .footer {
   padding: 5px 0;

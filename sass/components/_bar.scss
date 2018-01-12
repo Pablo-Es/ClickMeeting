@@ -1,8 +1,7 @@
 .article-bar {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 52px;
   &:before {
-    border-top: 3px solid #70b33f;
     content: "";
     height: 0;
     left: auto;
@@ -11,25 +10,55 @@
     top: 50%;
     width: 100%;
   }
+  &--bar1 {
+
+    &:before{
+      border-top: 3px solid $barGreenColor;
+    }
+  }
+  &--bar2 {
+    &:before {
+      border-top: 3px solid $orangeColor;
+    }
+  }
+  &--bar3 {
+    &:before {
+      border-top: 3px solid $darkOrangeColor;
+    }
+  }
+  &--bar4 {
+    &:before {
+      border-top: 3px solid $brownColor;
+    }
+  }
+  &--bar5 {
+    &:before {
+      border-top: 3px solid $solidOrangeColor;
+    }
+  }
+  &--bar6 {
+    &:before {
+      border-top: 3px solid $blueColor;
+    }
+  }
 
   &__wrap {
+    width: 79.39%;
     position: relative;
     display: inline-block;
     border-left: 15px solid #fff;
     border-right: 15px solid #fff;
   }
 
-  &--first {
 
-  }
   &__text {
+    width: 100%;
     display: inline-block;
-    padding: 10px 25px 16px;
+    padding: 10px 0 16px;
     font-size: $articleBarTextSize;
     color: $articleBarTextColor;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.29);
-    background-color: rgb(112, 179, 63);
-    border-radius: 25px;
+    border-radius: 50px;
     line-height: 1;
     &:after {
       content: "";
@@ -40,9 +69,46 @@
       height: 0;
       border-style: solid;
       border-width: 14px 14px 0 14px;
-      border-color: #6fb33f transparent transparent transparent;
+
+    }
+    &--text1 {
+      background-color: $barGreenColor;
+      &:after {
+        border-color: $barGreenColor transparent transparent transparent;
+      }
+    }
+    &--text2 {
+      background-color: $orangeColor;
+      &:after {
+        border-color: $orangeColor transparent transparent transparent;
+      }
+    }
+    &--text3 {
+      background-color: $darkOrangeColor;
+      &:after {
+        border-color: $darkOrangeColor transparent transparent transparent;
+      }
+    }
+    &--text4 {
+      background-color: $brownColor;
+      &:after {
+        border-color: $brownColor transparent transparent transparent;
+      }
+    }
+    &--text5 {
+      background-color: $solidOrangeColor;
+      &:after {
+        border-color: $solidOrangeColor transparent transparent transparent;
+      }
+    }
+    &--text6 {
+      background-color: $blueColor;
+      &:after {
+        border-color: $blueColor transparent transparent transparent;
+      }
     }
   }
+
 
 }
 

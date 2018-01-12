@@ -12,6 +12,19 @@
   &--level-3 {
     font-size: $heading-level-3;
   }
+  &__level-4 {
+    margin-bottom: 56px;
+    &--level-4 {
+      font-size: $heading-level-4;
+    }
+    &--level-4-1 {
+
+      font-size: $heading-level-4-1;
+      line-height: 0.8;
+    }
+
+  }
+
   &--dark {
     color: $sliderHeaderColor;
   }
@@ -23,7 +36,32 @@
     color: $barGreenColor;
     line-height: 1;
   }
+  &__span-reklame {
+    font-family: $baseFontReklame;
+    font-size: $heading-level-3-span-reklame;
+
+    &--span1 {
+      color: $barGreenColor;
+    }
+    &--span2 {
+      color: $orangeColor;
+    }
+    &--span3 {
+      color: $darkOrangeColor;
+    }
+    &--span4 {
+      color: $brownColor;
+    }
+    &--span5 {
+      color: $solidOrangeColor;
+    }
+    &--span6 {
+      color: $blueColor;
+    }
+  }
+
 
 }
+
 
 
