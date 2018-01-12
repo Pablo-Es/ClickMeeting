@@ -7,33 +7,28 @@
 &__heading {
   color: $sliderHeaderColor;
 }
+  &__main-content {
+    position: relative;
+  }
   &__slogan {
     position: relative;
     margin-top: 30px;
     padding-top: 76px;
     padding-bottom: 76px;
     border-bottom: 3px solid #71b43f;
-
   }
-    &__slogan:before {
-      border-top: 3px solid #71b43f;
-      content: "";
-      height: 0;
-      left: auto;
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 100%;
-    }
+
 &__image-women {
   position: absolute;
+  //bottom: -452px;
   bottom: 0;
-  left: 19%;
+  left: 0;
 }
   &__image-tablet {
     position: absolute;
+    //bottom: -452px;
     bottom: 0;
-    right: 11%;
+    right: 0;
   }
   &__control-left {
     @extend %control;
@@ -56,9 +51,4 @@
     height: 103px;
     background: url("../images/right-arrow.png") no-repeat;
   }
-}
-.your-way {
-  position: absolute;
-  right: 55px;
-  top: -67px;
 }

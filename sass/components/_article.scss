@@ -9,5 +9,15 @@ margin: 0;
     font-family: $baseFontReklame;
     color: $textGreenColor;
     font-size: 129px;
+    display: table;
+    white-space: nowrap;
+    &:before, &:after {
+      border-top: 3px solid #71b43f;
+      content: '';
+      display: table-cell;
+      position: relative;
+      top: 0.5em;
+      width: 91%;
+    }
   }
 }

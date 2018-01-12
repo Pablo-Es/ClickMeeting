@@ -1,6 +1,7 @@
 .heading {
   margin: 0;
   padding: 0;
+  word-wrap: break-word;
   &--level-1{
 
     font-size: $heading-level-1;
@@ -9,24 +10,20 @@
     font-size: $heading-level-2;
   }
   &--level-3 {
-    margin-bottom: 20px;
+    font-size: $heading-level-3;
   }
   &--dark {
     color: $sliderHeaderColor;
   }
+  &--light-dark {
+    color: $baseBlack;
+  }
+  &--span {
+    font-size: $heading-level-3-span;
+    color: $barGreenColor;
+    line-height: 1;
+  }
 
 }
-.Free_to_be_You_____anytime__anywhere_ {
-  font-size: 14.476px;
-  font-family: "BreeSerif";
-  color: rgb(34, 34, 34);
-  line-height: 1.52;
-  -moz-transform: matrix( 2.95884410776967,0,0,2.95806938593437,0,0);
-  -webkit-transform: matrix( 2.95884410776967,0,0,2.95806938593437,0,0);
-  -ms-transform: matrix( 2.95884410776967,0,0,2.95806938593437,0,0);
-  position: absolute;
-  left: 901.846px;
-  top: 397.454px;
-  z-index: 228;
-}
+
 
