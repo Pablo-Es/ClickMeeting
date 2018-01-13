@@ -539,7 +539,8 @@ figure {
       width: 91%; }
 
 .button {
-  color: #ffffff; }
+  color: #ffffff;
+  white-space: nowrap; }
   .button--premium {
     display: block;
     background-image: -moz-linear-gradient(90deg, #ff7006 0%, #ff961a 100%);
@@ -570,7 +571,13 @@ li a.nav-link.button.button--login {
   .heading--level-2 {
     font-size: 42.83px; }
   .heading--level-3 {
-    font-size: 77.59px; }
+    margin-bottom: 66px;
+    font-size: 77.6px;
+    line-height: 1;
+    white-space: nowrap; }
+  .heading__level-3-span {
+    font-size: 58px;
+    color: #65bc25; }
   .heading__level-4 {
     margin-bottom: 56px; }
     .heading__level-4--level-4 {
@@ -674,6 +681,25 @@ li a.nav-link.button.button--login {
       .article-bar__text--text6:after {
         border-color: #1e6ad1 transparent transparent transparent; }
 
+.digits {
+  display: inline-block;
+  margin: 0 2px;
+  border-radius: 6px;
+  background: #e6e6e6;
+  background: -moz-linear-gradient(top, #e6e6e6 0%, #f2f2f2 27%, #fcfcfc 51%, #f7f7f7 100%);
+  background: -webkit-linear-gradient(top, #e6e6e6 0%, #f2f2f2 27%, #fcfcfc 51%, #f7f7f7 100%);
+  background: linear-gradient(to bottom, #e6e6e6 0%, #f2f2f2 27%, #fcfcfc 51%, #f7f7f7 100%);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.72), inset 0px 2px 2px 0px rgba(0, 0, 0, 0.004); }
+  .digits--first {
+    position: relative; }
+    .digits--first:before {
+      position: absolute;
+      content: "";
+      width: 40px;
+      height: 19px;
+      background: url("../images/first-digit-bg.png") no-repeat;
+      top: 50%; }
+
 .slider {
   position: relative;
   padding-top: 60px;
@@ -722,6 +748,8 @@ li a.nav-link.button.button--login {
   .more-slogans__article {
     padding-top: 30px;
     padding-bottom: 30px; }
+  .more-slogans__article:last-child {
+    padding-bottom: 59px; }
 
 .footer {
   padding: 5px 0;

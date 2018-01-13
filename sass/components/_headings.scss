@@ -10,7 +10,16 @@
     font-size: $heading-level-2;
   }
   &--level-3 {
+    margin-bottom: 66px;
     font-size: $heading-level-3;
+    line-height: 1;
+    white-space: nowrap;
+  }
+  &__level-3-span {
+    font-size: $heading-level-3-span2;
+    color: $textGreenColor;
+
+
   }
   &__level-4 {
     margin-bottom: 56px;
