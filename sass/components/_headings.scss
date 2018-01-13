@@ -33,6 +33,9 @@
     }
 
   }
+  &--level-5 {
+    font-size: $heading-level-5;
+  }
 
   &--dark {
     color: $sliderHeaderColor;

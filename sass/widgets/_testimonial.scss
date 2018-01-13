@@ -1,0 +1,39 @@
+.testimonial {
+
+  padding: 88px 0 145px;
+  background: url("../images/testimonial-bg_02.jpg") no-repeat center 0;
+  background-size: cover;
+
+&__note {
+  position: relative;
+ &:before {
+   position: absolute;
+   border-top:3px solid #b5c3a7;
+   top: 50%;
+   content: '';
+   width: 39%;
+   left: auto;
+   height: 0;
+ }
+}
+  &__wrap {
+    position: relative;
+    display: inline-block;
+
+  }
+&__text {
+margin-bottom: 42px;
+  font-size: 23px;
+  color: $colorTestimonialText;
+}
+  &__heading {
+    color: $textGreenColor;
+  }
+  &__client {
+    margin-left: 20px;
+    &-text {
+      font-size: 23px;
+      color: #b5c3a7;
+    }
+  }
+}
