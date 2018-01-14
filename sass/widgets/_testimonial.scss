@@ -6,19 +6,22 @@
 
 &__note {
   position: relative;
- &:before {
-   position: absolute;
-   border-top:3px solid #b5c3a7;
-   top: 50%;
-   content: '';
-   width: 39%;
-   left: auto;
-   height: 0;
- }
+
 }
   &__wrap {
+    &:before {
+      position: absolute;
+      border-top:3px solid #b5c3a7;
+      top: 50%;
+      content: '';
+      width: 15vw;
+      left: auto;
+      height: 0;
+    }
+  }
+  &__box {
     position: relative;
-    display: inline-block;
+
 
   }
 &__text {

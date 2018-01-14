@@ -4,8 +4,12 @@
   padding-bottom: 452px;
   background: url("../images/header-bg.jpg") no-repeat center center;
   background-size: cover;
+
 &__heading {
   color: $sliderHeaderColor;
+  @media screen and (max-width: 991px) {
+    margin-bottom: 20px;
+  }
 }
   &__main-content {
     position: relative;
@@ -19,16 +23,25 @@
   }
 
 &__image-women {
+  display: none;
   position: absolute;
-  //bottom: -452px;
-  bottom: 0;
-  left: 0;
+  bottom: -452px;
+  left: -103px;
+  @media screen and (min-width: 992px){
+    display: block;
+  }
 }
   &__image-tablet {
+    display: none;
     position: absolute;
-    //bottom: -452px;
-    bottom: 0;
-    right: 0;
+    bottom: -452px;
+    right: -184px;
+    @media screen and (min-width: 992px){
+      display: block;
+    }
+    @media screen and (max-width:1364px ){
+      right: -150px;
+    }
   }
   &__control-left {
     @extend %control;
