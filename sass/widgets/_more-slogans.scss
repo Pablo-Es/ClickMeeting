@@ -3,7 +3,10 @@
   border-top:1px solid #ffffff;
   background: url("../images/bg.png") no-repeat;
   &__header {
-    padding-bottom: 88px;
+    padding-bottom: 43px;
+    @media screen and (min-width: 576px) {
+      padding-bottom: 88px;
+    }
   }
   &__article {
     padding-top: 30px;

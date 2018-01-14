@@ -1,12 +1,9 @@
 .testimonial {
-
   padding: 88px 0 145px;
   background: url("../images/testimonial-bg_02.jpg") no-repeat center 0;
   background-size: cover;
-
 &__note {
   position: relative;
-
 }
   &__wrap {
     &:before {
@@ -21,13 +18,14 @@
   }
   &__box {
     position: relative;
-
-
   }
 &__text {
 margin-bottom: 42px;
-  font-size: 23px;
+  font-size: 16px;
   color: $colorTestimonialText;
+  @media screen and (min-width: 768px) {
+    font-size: 23px;
+  }
 }
   &__heading {
     color: $textGreenColor;

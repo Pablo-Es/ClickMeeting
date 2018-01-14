@@ -39,25 +39,39 @@
     }
   }
   &__level-3-span {
-    font-size: $heading-level-3-span2;
+    font-size: 24px;
     color: $textGreenColor;
-
+    @media screen and (min-width: 576px) {
+    font-size: 45px;
+  }
+    @media screen and (min-width: 768px) {
+      font-size: $heading-level-3-span2;
+    }
 
   }
   &__level-4 {
     margin-bottom: 56px;
     &--level-4 {
-      font-size: $heading-level-4;
+      font-size: 28px;
+      @media screen and (min-width: 576px) {
+        font-size: $heading-level-4;
+      }
     }
     &--level-4-1 {
 
-      font-size: $heading-level-4-1;
+      font-size: 28px;
       line-height: 0.8;
+      @media screen and (min-width: 576px) {
+        font-size: $heading-level-4-1;
+      }
     }
 
   }
   &--level-5 {
-    font-size: $heading-level-5;
+    font-size: 25px;
+    @media screen and (min-width: 768px) {
+      font-size: $heading-level-5;
+    }
   }
 
   &--dark {
@@ -83,7 +97,10 @@
   }
   &__span-reklame {
     font-family: $baseFontReklame;
-    font-size: $heading-level-3-span-reklame;
+    font-size: 50px;
+    @media screen and (min-width: 576px) {
+      font-size: $heading-level-3-span-reklame;
+    }
 
     &--span1 {
       color: $barGreenColor;

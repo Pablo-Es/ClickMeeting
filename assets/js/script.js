@@ -1,12 +1,5 @@
 $(function() {
-    var body =$('html, body');
-    $(document).on('click', 'a[href^="#"]', function (event) {
-        event.preventDefault();
-
-        body.animate({
-            scrollTop: $($.attr(this, 'href')).offset().top
-        }, 500);
-    });
+    var body = $("html, body");
     var button = $('.scroll-top');
     $(window).scroll(function() {
         var topPos = $(this).scrollTop();
@@ -22,7 +15,6 @@ $(function() {
         }, 500);
         return false;
     });
-
 
 
 

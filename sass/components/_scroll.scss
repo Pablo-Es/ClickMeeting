@@ -1,0 +1,25 @@
+.scroll-top {
+  transition: visibility 0.8s, opacity 0.8s;
+  position: fixed;
+  right: 30px;
+  color: #1e6ad1;
+  opacity: 0.8;
+  cursor: pointer;
+  animation: scroll 1s infinite alternate;
+  &.hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+
+
+@keyframes scroll {
+  0% {
+    bottom: 30px;
+  }
+
+  100% {
+    bottom: 40px;
+  }
+}

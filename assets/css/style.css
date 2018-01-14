@@ -582,8 +582,11 @@ figure {
         font-size: 36px; } }
   .button--small {
     display: block;
-    font-size: 23px;
+    font-size: 16px;
     padding: 4px 12px; }
+    @media screen and (min-width: 992px) {
+      .button--small {
+        font-size: 23px; } }
   .button:hover {
     color: #ffffff; }
 
@@ -627,17 +630,32 @@ li a.nav-link.button.button--login {
       .heading--level-3 {
         font-size: 77.6px; } }
   .heading__level-3-span {
-    font-size: 58px;
+    font-size: 24px;
     color: #65bc25; }
+    @media screen and (min-width: 576px) {
+      .heading__level-3-span {
+        font-size: 45px; } }
+    @media screen and (min-width: 768px) {
+      .heading__level-3-span {
+        font-size: 58px; } }
   .heading__level-4 {
     margin-bottom: 56px; }
     .heading__level-4--level-4 {
-      font-size: 40px; }
+      font-size: 28px; }
+      @media screen and (min-width: 576px) {
+        .heading__level-4--level-4 {
+          font-size: 40px; } }
     .heading__level-4--level-4-1 {
-      font-size: 60px;
+      font-size: 28px;
       line-height: 0.8; }
+      @media screen and (min-width: 576px) {
+        .heading__level-4--level-4-1 {
+          font-size: 60px; } }
   .heading--level-5 {
-    font-size: 48px; }
+    font-size: 25px; }
+    @media screen and (min-width: 768px) {
+      .heading--level-5 {
+        font-size: 48px; } }
   .heading--dark {
     color: #222222; }
   .heading--light-dark {
@@ -657,7 +675,10 @@ li a.nav-link.button.button--login {
         font-size: 98.26px; } }
   .heading__span-reklame {
     font-family: "ReklameScriptRegular";
-    font-size: 72px; }
+    font-size: 50px; }
+    @media screen and (min-width: 576px) {
+      .heading__span-reklame {
+        font-size: 72px; } }
     .heading__span-reklame--span1 {
       color: #70b33f; }
     .heading__span-reklame--span2 {
@@ -704,15 +725,21 @@ li a.nav-link.button.button--login {
     width: 100%;
     display: inline-block;
     padding: 10px 0 16px;
-    font-size: 40px;
+    font-size: 17px;
     color: #ffffff;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.29);
     border-radius: 50px;
     line-height: 1; }
+    @media screen and (min-width: 576px) {
+      .article-bar__text {
+        font-size: 26px; } }
+    @media screen and (min-width: 992px) {
+      .article-bar__text {
+        font-size: 40px; } }
     .article-bar__text:after {
       content: "";
       position: absolute;
-      bottom: -14px;
+      bottom: -13px;
       left: 50%;
       width: 0;
       height: 0;
@@ -762,6 +789,23 @@ li a.nav-link.button.button--login {
       background: url("../images/first-digit-bg.png") no-repeat;
       top: 50%; }
 
+.scroll-top {
+  transition: visibility 0.8s, opacity 0.8s;
+  position: fixed;
+  right: 30px;
+  color: #1e6ad1;
+  opacity: 0.8;
+  cursor: pointer;
+  animation: scroll 1s infinite alternate; }
+  .scroll-top.hidden {
+    visibility: hidden;
+    opacity: 0; }
+
+@keyframes scroll {
+  0% {
+    bottom: 30px; }
+  100% {
+    bottom: 40px; } }
 .slider {
   position: relative;
   padding-top: 60px;
@@ -820,7 +864,10 @@ li a.nav-link.button.button--login {
   border-top: 1px solid #ffffff;
   background: url("../images/bg.png") no-repeat; }
   .more-slogans__header {
-    padding-bottom: 88px; }
+    padding-bottom: 43px; }
+    @media screen and (min-width: 576px) {
+      .more-slogans__header {
+        padding-bottom: 88px; } }
   .more-slogans__article {
     padding-top: 30px;
     padding-bottom: 30px; }
@@ -845,8 +892,11 @@ li a.nav-link.button.button--login {
     position: relative; }
   .testimonial__text {
     margin-bottom: 42px;
-    font-size: 23px;
+    font-size: 16px;
     color: #26410b; }
+    @media screen and (min-width: 768px) {
+      .testimonial__text {
+        font-size: 23px; } }
   .testimonial__heading {
     color: #65bc25; }
   .testimonial__client {
@@ -856,6 +906,7 @@ li a.nav-link.button.button--login {
       color: #b5c3a7; }
 
 .footer-bar {
+  display: none;
   position: fixed;
   width: 100%;
   bottom: 0;
@@ -864,6 +915,9 @@ li a.nav-link.button.button--login {
   background: -webkit-linear-gradient(top, #242528 0%, #1f2022 52%, #18191b 100%);
   background: linear-gradient(to bottom, #242528 0%, #1f2022 52%, #18191b 100%);
   box-shadow: 0px -5px 7px 0px rgba(0, 0, 0, 0.28); }
+  @media screen and (min-width: 552px) {
+    .footer-bar {
+      display: block; } }
   .footer-bar__middle:before {
     border-top: 1px solid #373839;
     content: "";
@@ -881,10 +935,13 @@ li a.nav-link.button.button--login {
     background: linear-gradient(to bottom, #242528 0%, #1f2022 52%, #18191b 100%); }
   .footer-bar__article {
     display: inline-block;
-    font-size: 24px;
+    font-size: 16px;
     color: #ffffff;
     margin-bottom: 0;
     padding: 10px 0;
     margin-right: 45px; }
+    @media screen and (min-width: 992px) {
+      .footer-bar__article {
+        font-size: 24px; } }
 
 /*# sourceMappingURL=style.css.map */
