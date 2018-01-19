@@ -35,12 +35,32 @@ li {
   font-family: "Bree Serif", Helvetica, Arial, serif;
   font-weight: 400; }
 
-.slider__control-left, .slider__control-right {
+.slider__control-ico-left, .slider__control-ico-right {
   position: absolute;
   display: block;
   top: 50%;
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+  cursor: pointer; }
 
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1); }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05); }
+  to {
+    transform: scale3d(1, 1, 1); } }
+@keyframes flash {
+  from, 50%, to {
+    opacity: 1; }
+  25%, 75% {
+    opacity: 0; } }
+@keyframes shake {
+  from, to {
+    transform: translate3d(0, 0, 0); }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(-10px, 0, 0); }
+  20%, 40%, 60%, 80% {
+    transform: translate3d(10px, 0, 0); } }
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -847,16 +867,14 @@ li a.nav-link.button.button--login {
     @media screen and (max-width: 1364px) {
       .slider__image-tablet {
         right: -150px; } }
-  .slider__control-left {
-    left: 0; }
-  .slider__control-right {
-    right: 0; }
   .slider__control-ico-left {
+    left: 0;
     display: block;
     width: 71px;
     height: 110px;
     background: url("../images/left-arrow.png") no-repeat; }
   .slider__control-ico-right {
+    right: 0;
     display: block;
     width: 69px;
     height: 103px;
@@ -902,7 +920,6 @@ li a.nav-link.button.button--login {
       color: #b5c3a7; }
 
 .footer-bar {
-  display: none;
   position: fixed;
   width: 100%;
   bottom: 0;
@@ -911,9 +928,6 @@ li a.nav-link.button.button--login {
   background: -webkit-linear-gradient(top, #242528 0%, #1f2022 52%, #18191b 100%);
   background: linear-gradient(to bottom, #242528 0%, #1f2022 52%, #18191b 100%);
   box-shadow: 0px -5px 7px 0px rgba(0, 0, 0, 0.28); }
-  @media screen and (min-width: 552px) {
-    .footer-bar {
-      display: block; } }
   .footer-bar__middle:before {
     border-top: 1px solid #373839;
     content: "";
@@ -931,13 +945,21 @@ li a.nav-link.button.button--login {
     background: linear-gradient(to bottom, #242528 0%, #1f2022 52%, #18191b 100%); }
   .footer-bar__article {
     display: inline-block;
-    font-size: 16px;
+    font-size: 12px;
     color: #ffffff;
     margin-bottom: 0;
     padding: 10px 0;
     margin-right: 45px; }
+    @media screen and (min-width: 551px) {
+      .footer-bar__article {
+        font-size: 16px; } }
     @media screen and (min-width: 992px) {
       .footer-bar__article {
         font-size: 24px; } }
+  .footer-bar__btn {
+    margin: 10px 0; }
+    @media screen and (min-width: 551px) {
+      .footer-bar__btn {
+        margin: 0; } }
 
 /*# sourceMappingURL=style.css.map */

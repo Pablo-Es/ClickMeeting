@@ -43,25 +43,27 @@
       right: -150px;
     }
   }
-  &__control-left {
+
+  &__control-ico-left {
     @extend %control;
     left: 0;
-  }
-  &__control-right {
-  @extend %control;
-    right: 0;
-
-  }
-  &__control-ico-left {
     display: block;
     width: 71px;
     height: 110px;
     background: url("../images/left-arrow.png") no-repeat;
+    //&:hover {
+    //  @extend %control-hover;
+    //}
   }
   &__control-ico-right {
+    @extend %control;
+    right: 0;
     display: block;
     width: 69px;
     height: 103px;
     background: url("../images/right-arrow.png") no-repeat;
+    //&:hover {
+    //  @extend %control-hover;
+    //}
   }
 }

@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="assets/css/reklameFont.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1" media="screen"/>
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+
 
 </head>
 <body>
@@ -61,24 +63,41 @@
 <section class="slider">
     <div class="container container--slider">
         <div class="slider__main-content">
-            <h1 class="heading heading--level-1 heading--dark text-center">Videoconferencing</h1>
-
-            <article class="slider__slogan">
-                <p class="article__text article__text--slider text-right">Your way</p>
-                <div class="row justify-content-end align-items-center">
-                    <h2 class="heading heading--level-2 slider__heading col-lg-5">Free to be You... anytime,
-                        anywhere.</h2>
-                    <div class="col-md-4 col-lg-3 text-center  d-flex justify-content-end">
-                        <a href="#" class="button button--premium">Try It Free</a>
+            <div class="slider__slide">
+                <h1 class="heading heading--level-1 heading--dark text-center">Videoconferencing</h1>
+                <article class="slider__slogan">
+                    <p class="article__text article__text--slider text-right">Your way</p>
+                    <div class="row justify-content-end align-items-center">
+                        <h2 class="heading heading--level-2 slider__heading col-lg-5">Free to be You... anytime,
+                            anywhere.</h2>
+                        <div class="col-md-4 col-lg-3 text-center  d-flex justify-content-end">
+                            <a href="#" class="button button--premium">Try It Free</a>
+                        </div>
                     </div>
-                </div>
-            </article>
-            <figure class="slider__image-women"><img src="assets/images/women.png" class="img-fluid" alt=""></figure>
-            <figure class="slider__image-tablet"><img src="assets/images/tablet.png" class="img-fluid" alt=""></figure>
+                </article>
+                <figure class="animated bounceInLeft slider__image-women"><img src="assets/images/women.png" class="img-fluid" alt=""></figure>
+                <figure class="animated bounceInRight slider__image-tablet"><img src="assets/images/tablet.png" class="img-fluid" alt=""></figure>
+            </div>
+            <div class="slider__slide">
+                <h1 class="heading heading--level-1 heading--dark text-center">Videoconferencing</h1>
+                <article class="slider__slogan">
+                    <p class="article__text article__text--slider text-right">Your way</p>
+                    <div class="row justify-content-end align-items-center">
+                        <h2 class="heading heading--level-2 slider__heading col-lg-5">Free to be You... anytime,
+                            anywhere.</h2>
+                        <div class="col-md-4 col-lg-3 text-center  d-flex justify-content-end">
+                            <a href="#" class="button button--premium">Try It Free</a>
+                        </div>
+                    </div>
+                </article>
+                <figure class="animated bounceInLeft slider__image-women"><img src="assets/images/women.png" class="img-fluid" alt=""></figure>
+                <figure class="animated bounceInRight slider__image-tablet"><img src="assets/images/tablet.png" class="img-fluid" alt=""></figure>
+            </div>
         </div>
 
-        <a href="#" class="slider__control-left"><span class="slider__control-ico-left"></span></a>
-        <a href="#" class="slider__control-right"><span class="slider__control-ico-right"></span></a>
+
+        <span class="slider__controls slider__control-ico-left"></span>
+        <span class="slider__controls slider__control-ico-right"></span>
     </div>
 </section>
 <main>
@@ -260,7 +279,7 @@
                 <div class="footer-bar__middle">
                     <div class="footer-bar__wrap d-flex flex-wrap justify-content-center align-items-center text-center">
                         <p class="article__text footer-bar__article">Over 530,000 users connect via ClickMeeting</p>
-                        <span><a href="#" class="button button--small">Try It Free</a></span>
+                        <span class="footer-bar__btn"><a href="#" class="button button--small">Try It Free</a></span>
                     </div>
                 </div>
             </div>
