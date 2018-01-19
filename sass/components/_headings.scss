@@ -70,6 +70,9 @@
   &--level-5 {
     font-size: 25px;
     @media screen and (min-width: 768px) {
+      font-size: 46px;
+    }
+    @media screen and (min-width: 1200px) {
       font-size: $heading-level-5;
     }
   }

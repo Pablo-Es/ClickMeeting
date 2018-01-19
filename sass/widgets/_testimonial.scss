@@ -2,22 +2,12 @@
   padding: 88px 0 145px;
   background: url("../images/testimonial-bg_02.jpg") no-repeat center 0;
   background-size: cover;
-&__note {
-  position: relative;
-}
-  &__wrap {
-    &:before {
-      position: absolute;
-      border-top:3px solid #b5c3a7;
-      top: 50%;
-      content: '';
-      width: 15vw;
-      left: auto;
-      height: 0;
-    }
-  }
-  &__box {
+
+  &__line {
     position: relative;
+    height: 3px;
+    background-color: #b5c3a7;
+    margin-bottom: 20px;
   }
 &__text {
 margin-bottom: 42px;
