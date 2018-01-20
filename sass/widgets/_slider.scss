@@ -4,16 +4,19 @@
   padding-bottom: 452px;
   background: url("../images/header-bg.jpg") no-repeat center center;
   background-size: cover;
-
+  //&__main-content {
+  //  position: relative;
+  //}
+&__slide {
+  position: relative;
+}
 &__heading {
   color: $sliderHeaderColor;
   @media screen and (max-width: 991px) {
     margin-bottom: 20px;
   }
 }
-  &__main-content {
-    position: relative;
-  }
+
   &__slogan {
     position: relative;
     margin-top: 30px;

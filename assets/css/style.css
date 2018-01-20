@@ -835,13 +835,13 @@ li a.nav-link.button.button--login {
   padding-bottom: 452px;
   background: url("../images/header-bg.jpg") no-repeat center center;
   background-size: cover; }
+  .slider__slide {
+    position: relative; }
   .slider__heading {
     color: #222222; }
     @media screen and (max-width: 991px) {
       .slider__heading {
         margin-bottom: 20px; } }
-  .slider__main-content {
-    position: relative; }
   .slider__slogan {
     position: relative;
     margin-top: 30px;
