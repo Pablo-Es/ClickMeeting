@@ -4,6 +4,7 @@
     const $slider = $('.slider');
     const $slides = $slider.find('.slider__slide');
     let $currSlide = $slides.first();
+    let $nextSlide;
     const $controlArrows = $slider.find('.slider__controls');
     $slides.hide();
     $currSlide.show();
@@ -11,26 +12,21 @@
     function slideOnClick() {
         const $this = $(this);
         if($this.hasClass('slider__control-ico-left')){
-           var $nextSlide = $currSlide.prev();
+            $nextSlide = $currSlide.prev();
             if($nextSlide.length < 1){
                 $nextSlide = $slides.last();
-                // $nextSlide.toggleClass('animated BounceInRight');
             }
-
+            $nextSlide.show().addClass('animated bounceInLeft');
+            $currSlide.hide().removeClass('animated bounceInLeft bounceInRight');
         } else{
             $nextSlide = $currSlide.next();
             if($nextSlide.length < 1){
                 $nextSlide = $slides.first();
-                // $nextSlide.toggleClass('animated bounceInLeft');
-
             }
-
-
+            $nextSlide.show().addClass('animated bounceInRight');
+            $currSlide.hide().removeClass('animated bounceInRight bounceInLeft');
         }
-
-        $currSlide.fadeOut('medium');
-        $nextSlide.fadeIn('medium');
-        $currSlide = $nextSlide;
+         $currSlide = $nextSlide;
     }
     $controlArrows.on('click', slideOnClick);
 
