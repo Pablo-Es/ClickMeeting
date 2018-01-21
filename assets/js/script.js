@@ -28,8 +28,8 @@
 
         }
 
-        $currSlide.toggleClass('animated BounceInRight');
-        $nextSlide.toggleClass('animated bounceInLeft');
+        $currSlide.fadeOut('medium');
+        $nextSlide.fadeIn('medium');
         $currSlide = $nextSlide;
     }
     $controlArrows.on('click', slideOnClick);
